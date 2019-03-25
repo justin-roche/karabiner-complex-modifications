@@ -1,0 +1,306 @@
+{
+    "rules": [
+        {
+            "manipulators": [
+                {
+                    "conditions": [
+                        {
+                            "value": 1,
+                            "name": "mouse_layer",
+                            "type": "variable_if"
+                        }
+                    ],
+                    "to": [
+                        {
+                            "mouse_key": {
+                                "y": 1536
+                            }
+                        }
+                    ],
+                    "from": {
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        },
+                        "key_code": "j"
+                    },
+                    "type": "basic"
+                },
+                {
+                    "parameters": {
+                        "basic.simultaneous_threshold_milliseconds": 500
+                    },
+                    "to": [
+                        {
+                            "set_variable": {
+                                "value": 0,
+                                "name": "mouse_layer"
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "value": 1,
+                            "name": "mouse_layer",
+                            "type": "variable_if"
+                        }
+                    ],
+                    "from": {
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        },
+                        "simultaneous": [
+                            {
+                                "key_code": "u"
+                            },
+                            {
+                                "key_code": "i"
+                            }
+                        ]
+                    },
+                    "type": "basic"
+                },
+                {
+                    "parameters": {
+                        "basic.simultaneous_threshold_milliseconds": 500
+                    },
+                    "to": [
+                        {
+                            "set_variable": {
+                                "value": 1,
+                                "name": "mouse_layer"
+                            }
+                        },
+                        {
+                            "mouse_key": {
+                                "y": 1536
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "value": 0,
+                            "name": "mouse_layer",
+                            "type": "variable_if"
+                        }
+                    ],
+                    "from": {
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        },
+                        "simultaneous": [
+                            {
+                                "key_code": "u"
+                            },
+                            {
+                                "key_code": "i"
+                            }
+                        ]
+                    },
+                    "type": "basic"
+                },
+                {
+                    "conditions": [
+                        {
+                            "value": 1,
+                            "name": "mouse_layer",
+                            "type": "variable_if"
+                        }
+                    ],
+                    "to": [
+                        {
+                            "mouse_key": {
+                                "y": -1536
+                            }
+                        }
+                    ],
+                    "from": {
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        },
+                        "key_code": "k"
+                    },
+                    "type": "basic"
+                },
+                {
+                    "conditions": [
+                        {
+                            "value": 1,
+                            "name": "mouse_layer",
+                            "type": "variable_if"
+                        }
+                    ],
+                    "to": [
+                        {
+                            "mouse_key": {
+                                "x": -1536
+                            }
+                        }
+                    ],
+                    "from": {
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        },
+                        "key_code": "h"
+                    },
+                    "type": "basic"
+                },
+                {
+                    "conditions": [
+                        {
+                            "value": 1,
+                            "name": "mouse_layer",
+                            "type": "variable_if"
+                        }
+                    ],
+                    "to": [
+                        {
+                            "mouse_key": {
+                                "x": 1536
+                            }
+                        }
+                    ],
+                    "from": {
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        },
+                        "key_code": "l"
+                    },
+                    "type": "basic"
+                },
+                {
+                    "conditions": [
+                        {
+                            "value": 1,
+                            "name": "mouse_layer",
+                            "type": "variable_if"
+                        }
+                    ],
+                    "to": [
+                        {
+                            "pointing_button": "button1"
+                        }
+                    ],
+                    "from": {
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        },
+                        "key_code": "spacebar"
+                    },
+                    "type": "basic"
+                },
+                {
+                    "conditions": [
+                        {
+                            "value": 1,
+                            "name": "mouse_layer",
+                            "type": "variable_if"
+                        }
+                    ],
+                    "to": [
+                        {
+                            "pointing_button": "button3"
+                        }
+                    ],
+                    "from": {
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        },
+                        "key_code": "v"
+                    },
+                    "type": "basic"
+                },
+                {
+                    "conditions": [
+                        {
+                            "value": 1,
+                            "name": "mouse_layer",
+                            "type": "variable_if"
+                        }
+                    ],
+                    "to": [
+                        {
+                            "pointing_button": "button2"
+                        }
+                    ],
+                    "from": {
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        },
+                        "key_code": "b"
+                    },
+                    "type": "basic"
+                },
+                {
+                    "conditions": [
+                        {
+                            "value": 1,
+                            "name": "mouse_layer",
+                            "type": "variable_if"
+                        }
+                    ],
+                    "to": [
+                        {
+                            "mouse_key": {
+                                "speed_multiplier": 2.0
+                            }
+                        }
+                    ],
+                    "from": {
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        },
+                        "key_code": "f"
+                    },
+                    "type": "basic"
+                },
+                {
+                    "conditions": [
+                        {
+                            "value": 1,
+                            "name": "mouse_layer",
+                            "type": "variable_if"
+                        }
+                    ],
+                    "to": [
+                        {
+                            "mouse_key": {
+                                "speed_multiplier": 0.5
+                            }
+                        }
+                    ],
+                    "from": {
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        },
+                        "key_code": "g"
+                    },
+                    "type": "basic"
+                }
+            ],
+            "description": "ui -> mouse"
+        }
+    ],
+    "title": "ui -> mouse"
+}

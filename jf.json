@@ -1,0 +1,36 @@
+{
+    "title": "jf -> app",
+    "rules": [
+        {
+            "description": "jf -> app",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "simultaneous": [
+                            {
+                                "key_code": "j"
+                            },
+                            {
+                                "key_code": "f"
+                            }
+                        ],
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "modifiers": [
+                                "left_command"
+                            ],
+                            "key_code": "tab"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,83 @@
+{
+    "rules": [
+        {
+            "manipulators": [
+                {
+                    "to_if_alone": [
+                        {
+                            "key_code": "spacebar"
+                        }
+                    ],
+                    "to": [
+                        {
+                            "key_code": "left_command"
+                        }
+                    ],
+                    "from": {
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        },
+                        "key_code": "spacebar"
+                    },
+                    "type": "basic"
+                }
+            ],
+            "description": "space-key -> cmd-key"
+        },
+        {
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "to_if_alone": [
+                        {
+                            "key_code": "spacebar"
+                        }
+                    ],
+                    "to": [
+                        {
+                            "key_code": "left_control"
+                        }
+                    ],
+                    "from": {
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        },
+                        "key_code": "spacebar"
+                    }
+                }
+            ],
+            "description": "Change spacebar to left_ctrl if pressed with other keys (Post spacebar when pressed alone)"
+        },
+        {
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "to_if_alone": [
+                        {
+                            "key_code": "spacebar"
+                        }
+                    ],
+                    "to": [
+                        {
+                            "key_code": "left_option"
+                        }
+                    ],
+                    "from": {
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        },
+                        "key_code": "spacebar"
+                    }
+                }
+            ],
+            "description": "Change spacebar to left_option if pressed with other keys (Post spacebar when pressed alone)"
+        }
+    ],
+    "title": "space-key -> cmd-key"
+}
