@@ -1,0 +1,34 @@
+{
+    "rules": [
+        {
+            "manipulators": [
+                {
+                    "to": [
+                        {
+                            "key_code": "tab"
+                        }
+                    ],
+                    "from": {
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        },
+                        "simultaneous": [
+                            {
+                                "key_code": "d"
+                            },
+                            {
+                                "key_code": "spacebar"
+                            }
+                        ]
+                    },
+                    "type": "basic"
+                }
+            ],
+            "description": "space j -> cmd tab"
+        }
+    ],
+    "title": "space j -> cmd tab"
+}
+

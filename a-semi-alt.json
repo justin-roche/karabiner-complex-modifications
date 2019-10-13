@@ -1,0 +1,55 @@
+{
+    "rules": [
+        {
+            "manipulators": [
+                {
+                    "parameters": {
+                        "basic.simultaneous_threshold_milliseconds": 500
+                    },
+                    "to_if_alone": [
+                        {
+                            "key_code": "z"
+                        }
+                    ],
+                    "to": [
+                        {
+                            "key_code": "left_alt"
+                        }
+                    ],
+                    "from": {
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        },
+                        "key_code": "z"
+                    },
+                    "type": "basic"
+                },
+                {
+                    "to_if_alone": [
+                        {
+                            "key_code": "slash"
+                        }
+                    ],
+                    "to": [
+                        {
+                            "key_code": "left_alt"
+                        }
+                    ],
+                    "from": {
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        },
+                        "key_code": "slash"
+                    },
+                    "type": "basic"
+                }
+            ],
+            "description": "z/period -> alt-key"
+        }
+    ],
+    "title": "z/period -> alt-key"
+}

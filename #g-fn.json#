@@ -1,0 +1,31 @@
+{
+    "rules": [
+        {
+            "manipulators": [
+                {
+                    "TO_IF_alone": [
+                        {
+                            "key_code": "g"
+                        }
+                    ],
+                    "to": [
+                        {
+                            "key_code": "left_alt"
+                        }
+                    ],
+                    "from": {
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        },
+                        "key_code": "g"
+                    },
+                    "type": "basic"
+                }
+            ],
+            "description": "g-key -> alt-key"
+        }
+    ],
+    "title": "g-key -> alt-key"
+}

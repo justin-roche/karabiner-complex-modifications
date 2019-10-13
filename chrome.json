@@ -1,0 +1,41 @@
+{
+  "title": "Chrome",
+  "rules": [
+    {
+      "description": "Chrome keys",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "i",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "i",
+              "modifiers": [
+                "left_alt",
+                "left_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome"
+              ]
+            }
+          ]
+        }
+        
+        
+        
+      ]
+    }
+  ]
+}

@@ -1,21 +1,15 @@
 {
-    "title": "space -> ctrl (emacs)",
     "rules": [
         {
-            "description": "space -> ctrl (emacs)",
             "manipulators": [
                 {
-                    "from": {
-                        "key_code": "spacebar",
-                        "modifiers": {
-                            "optional": [
-                                "any"
-                            ]
-                        }
-                    },
-                    "to": [
+                    "type": "basic",
+                    "conditions": [
                         {
-                            "key_code": "left_control"
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "Emacs"
+                            ]
                         }
                     ],
                     "to_if_alone": [
@@ -23,17 +17,23 @@
                             "key_code": "spacebar"
                         }
                     ],
-                    "conditions": [
+                    "to": [
                         {
-                            "bundle_identifiers": [
-                                "Emacs"
-                            ],
-                            "type": "frontmost_application_if"
+                            "key_code": "left_control"
                         }
                     ],
-                    "type": "basic"
+                    "from": {
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        },
+                        "key_code": "spacebar"
+                    }
                 }
-            ]
+            ],
+            "description": "space -> ctrl (emacs)"
         }
-    ]
+    ],
+    "title": "space -> ctrl (emacs)"
 }

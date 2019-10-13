@@ -1,0 +1,57 @@
+{
+    "rules": [
+        {
+            "manipulators": [
+                {
+                    "TO_IF_alone": [
+                        {
+                            "key_code": "semicolon"
+                        }
+                    ],
+                    "to": [
+                        {
+                            "key_code": "right_shift"
+                        }
+                    ],
+                    "from": {
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        },
+                        "key_code": "semicolon"
+                    },
+                    "type": "basic"
+                }
+            ],
+            "description": "semicolon -> shift"
+        },
+        {
+            "manipulators": [
+                {
+                    "TO_IF_alone": [
+                        {
+                            "key_code": "a"
+                        }
+                    ],
+                    "to": [
+                        {
+                            "key_code": "shift"
+                        }
+                    ],
+                    "from": {
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        },
+                        "key_code": "a"
+                    },
+                    "type": "basic"
+                }
+            ],
+            "description": "a-key -> shift"
+        }
+    ],
+    "title": "a/semi -> shift"
+}

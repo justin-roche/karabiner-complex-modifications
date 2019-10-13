@@ -1,0 +1,62 @@
+{
+    "rules": [
+        {
+            "manipulators": [
+                {
+                    "to_if_alone": [
+                        {
+                            "key_code": "b"
+                        }
+                    ],
+                    "to": [
+                        {
+                            "key_code": "left_command"
+                        }
+                    ],
+                    "from": {
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        },
+                        "key_code": "b"
+                    },
+                    "type": "basic"
+                }
+            ],
+            "description": "b-key -> cmd-key"
+        },
+        {
+            "manipulators": [
+                {
+                    "parameters": {
+                        "basic.simultaneous_threshold_milliseconds": 500
+                    },
+                    "to": [
+                        {
+                            "key_code": "return_or_enter"
+                        }
+                    ],
+                    "from": {
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        },
+                        "simultaneous": [
+                            {
+                                "key_code": "b"
+                            },
+                            {
+                                "key_code": "n"
+                            }
+                        ]
+                    },
+                    "type": "basic"
+                }
+           ],
+            "description": "bn -> enter fast"
+        }
+    ],
+    "title": "b-key -> cmd-key"
+}

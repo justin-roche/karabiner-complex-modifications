@@ -1,0 +1,75 @@
+{
+"title": "Insert 1x/2x media controls",
+"rules": [
+    {
+      "description": "Insert: 1x to fastforward, 2x to rewind",
+      "manipulators": [
+	  {
+	      "type": "basic",
+	      "from": {
+		  "key_code": "4",
+		  "modifiers": {
+		      "optional": [
+			  "any"
+		      ]
+		  }
+	      },
+	      "to": [
+		  {
+		      "set_variable": {
+			  "name": "insert_flag",
+			  "value": 1
+		      }
+		  }
+	      ],
+	      "to_delayed_action": {
+		  "to_if_invoked": [
+		      {
+			  "key_code": "fastforward"
+		      },
+		      {
+			  "set_variable": {
+			      "name": "insert_flag",
+			      "value": 0
+			  }
+		      }
+		  ],
+		  "to_if_canceled": [
+		      {
+		      }
+		  ]
+	      },	      
+	      "conditions": [
+		  {
+		      "type": "variable_if",
+		      "name": "insert_flag",
+		      "value": 0
+		  }
+	      ]
+	  },
+	  {
+	      "type": "basic",
+	      "from": {
+		  "key_code": "4",
+		  "modifiers": {
+		      "optional": [
+			  "any"
+		      ]
+		  }
+	      },
+	      "to": [
+		  {
+		      "key_code": "6"
+		  },
+		  {
+		      "set_variable": {
+			  "name": "insert_flag",
+			  "value": 0
+		      }
+		  }	  		  
+	      ]	     
+	  }
+       ]
+    }
+  ]
+}
