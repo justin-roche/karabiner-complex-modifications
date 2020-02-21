@@ -1,0 +1,26 @@
+{
+    "title": "n > space",
+    "rules": [
+        {
+            "description": "n > space",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "n",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "spacebar"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

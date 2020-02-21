@@ -1,41 +1,94 @@
 {
-  "title": "Chrome",
-  "rules": [
-    {
-      "description": "Chrome keys",
-      "manipulators": [
+    "title": "Chrome keys",
+    "rules": [
         {
-          "type": "basic",
-          "from": {
-            "key_code": "i",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "i",
-              "modifiers": [
-                "left_alt",
-                "left_command"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome"
-              ]
-            }
-          ]
+            "description": "Chrome keys",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "d",
+                        "modifiers": {
+                            "mandatory": [
+                                "left_alt"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "i",
+                            "modifiers": [
+                                "left_alt",
+                                "left_command"
+                            ]
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com\\.google\\.Chrome"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "d",
+                        "modifiers": {
+                            "mandatory": [
+                                "left_alt"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "d",
+                            "modifiers": [
+                                "left_alt",
+                                "left_shift"
+                            ]
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com\\.google\\.Chrome"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "to": [
+                        {
+                            "key_code": "1",
+                            "modifiers": [
+                                "left_gui",
+                                "left_alt"
+                            ]
+                        }
+                    ],
+                    "from": {
+                        "modifiers": {
+                            "mandatory": [
+                                "left_gui"
+                            ]
+                        },
+                        "key_code": "h"
+                    },
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com\\.google\\.Chrome"
+                            ]
+                        }
+                    ]
+                }
+            ]
         }
-        
-        
-        
-      ]
-    }
-  ]
+    ]
 }

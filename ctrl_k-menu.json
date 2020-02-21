@@ -1,0 +1,37 @@
+{
+    "title": "cmd-k > meta 1",
+    "rules": [
+        {
+            "description": "cmd-k > meta 1",
+            "manipulators": [
+                {
+                    "to": [
+                        {
+                            "key_code": "1",
+                            "modifiers": [
+                                "left_alt"
+                            ]
+                        }
+                    ],
+                    "from": {
+                        "modifiers": {
+                            "mandatory": [
+                                "left_gui"
+                            ]
+                        },
+                        "key_code": "k"
+                    },
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com\\.google\\.Chrome"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

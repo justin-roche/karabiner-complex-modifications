@@ -1,0 +1,32 @@
+{
+    "title": "space > meta 1",
+    "rules": [
+        {
+            "description": "space > meta 1",
+            "manipulators": [
+                {
+                    "to": [
+                        {
+                            "key_code": "1",
+                            "modifiers": [
+                                "left_alt"
+                            ]
+                        }
+                    ],
+                    "from": {
+                        "key_code": "spacebar"
+                    },
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com\\.google\\.Chrome"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

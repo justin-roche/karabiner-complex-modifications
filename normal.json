@@ -1,0 +1,33 @@
+{
+    "title": "ui > normal",
+    "rules": [
+        {
+            "description": "ui > normal",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "simultaneous": [
+                            {
+                                "key_code": "u"
+                            },
+                            {
+                                "key_code": "i"
+                            }
+                        ],
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "shell_command": "/Library/Application\\ Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli --select-profile \"normal\""
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "title": "space-k > meta 1 n",
+    "rules": [
+        {
+            "description": "space-k > meta 1",
+            "manipulators": [
+                {
+                    "to": [
+                        {
+                            "key_code": "1",
+                            "modifiers": [
+                                "left_alt"
+                            ]
+                        }
+                    ],
+                    "from": {
+                        "simultaneous": [
+                            {
+                                "key_code": "spacebar"
+                            },
+                            {
+                                "key_code": "k"
+                            }
+                        ]
+                    },
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com\\.google\\.Chrome"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

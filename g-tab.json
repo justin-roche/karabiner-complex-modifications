@@ -1,0 +1,26 @@
+{
+    "title": "g > tab",
+    "rules": [
+        {
+            "description": "g > tab",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "g",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "tab"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

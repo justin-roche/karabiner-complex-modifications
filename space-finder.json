@@ -1,0 +1,31 @@
+{
+    "rules": [
+        {
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "to_if_alone": [
+                        {
+                            "key_code": "spacebar"
+                        }
+                    ],
+                    "to": [
+                        {
+                            "key_code": "left_control"
+                        }
+                    ],
+                    "from": {
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        },
+                        "key_code": "spacebar"
+                    }
+                }
+            ],
+            "description": "space -> ctrl (everywhere)"
+        }
+    ],
+    "title": "space -> ctrl (everywhere)"
+}
